@@ -13,7 +13,7 @@ datasource db {
 model User {
   bio           String?
   email         String      @unique
-  id            Int         @default(autoincrement()) @id
+  id            String      @default(uuid()) @id
   image         String?
   password      String?
   username      String?     @unique
